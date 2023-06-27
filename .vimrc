@@ -36,6 +36,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
