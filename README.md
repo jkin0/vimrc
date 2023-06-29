@@ -19,6 +19,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 3. Clone the repo and place ```.vimrc``` into ```~/.vimrc```.
 
+4. Run ```:PlugInstall``` in vim.
+
 ## Usage
 
 File tree: <kbd>Space</kbd> + <kbd>n</kbd>
