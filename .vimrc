@@ -1,3 +1,4 @@
+set nocompatible
 let mapleader = " "
 
 set bg=dark
@@ -16,14 +17,16 @@ set autoindent
 
 set fileformat=unix
 
-set hlsearch
-set incsearch
+set nohlsearch
+set noincsearch
 
 set scrolloff=4
 set updatetime=50
 
 set cursorline
 set encoding=utf-8
+
+syntax enable
 
 call plug#begin()
 
@@ -36,12 +39,10 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
 colorscheme gruvbox
-
 let g:airline_theme="gruvbox"
 
 :nnoremap <leader>n :NERDTreeToggle<CR>
