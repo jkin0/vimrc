@@ -1,4 +1,3 @@
-set nocompatible
 let mapleader = " "
 
 set bg=dark
@@ -14,10 +13,6 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set autoindent
-
-set fileformat=unix
-
-set nohlsearch
 set noincsearch
 
 set scrolloff=4
@@ -32,6 +27,8 @@ call plug#begin()
 
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'prabirshrestha/vim-lsp'
@@ -46,6 +43,12 @@ colorscheme gruvbox
 let g:airline_theme="gruvbox"
 
 :nnoremap <leader>n :NERDTreeToggle<CR>
+
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
