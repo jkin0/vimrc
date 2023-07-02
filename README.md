@@ -1,6 +1,6 @@
 # vimrc
 
-<img src="preview.png" alt="preview">
+![Screenshot from 2023-07-02 15-12-00](https://github.com/joshjkk/vimrc/assets/97398293/5a18234f-5887-4a48-86c8-9e048bf87427)
 
 ## Installation
 
