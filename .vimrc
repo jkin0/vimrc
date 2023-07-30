@@ -2,13 +2,13 @@ let mapleader = " "
 
 set bg=dark
 
-set number
 set nu
 set relativenumber
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set nowrap
 
 set expandtab
 set smartindent
