@@ -28,4 +28,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 File tree: <kbd>Space</kbd> + <kbd>n</kbd>
 
-Autocomplete: <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> to cycle through autocomplete options, <kbd>Enter</kbd> to select an option.
+Autocomplete: <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> to cycle through autocomplete options.
