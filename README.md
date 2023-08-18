@@ -7,10 +7,10 @@
 
 ## Installation
 
-1. Install vim:
+1. Install vim and curl:
 
 ``` bash
-sudo apt install vim
+sudo apt install vim curl
 ```
 
 2. Install vim-plug:
