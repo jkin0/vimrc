@@ -1,6 +1,7 @@
 let mapleader = " "
 
 set bg=dark
+set termguicolors
 
 set nu
 set relativenumber
@@ -41,6 +42,8 @@ call plug#end()
 
 colorscheme gruvbox
 let g:airline_theme="gruvbox"
+
+let g:NERDTreeWinSize=25
 
 :nnoremap <leader>n :NERDTreeToggle<CR>
 
